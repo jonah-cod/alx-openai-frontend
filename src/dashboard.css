@@ -1,0 +1,142 @@
+.dashboard{
+      width: 100%;
+      height: 100dvh;
+      display: grid;
+      grid-template-columns: 20% 80%;
+      grid-template-areas: "sidemenu topmenu topmenu topmenu"             "sidemenu outlet outlet outlet"
+                           "sidemenu outlet outlet outlet";
+                           
+}
+
+.side-menu-bar{
+      grid-area: sidemenu;
+      background-color: #ACC8C7;
+      padding: 1rem;
+}
+
+.side-menu-bar img{
+      width: 40px;
+}
+
+.logo-dash{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      
+}
+
+.logo-dash h4{
+      margin: 0;
+      color: #FFFFFF;
+      font-size: 1.2rem;
+      margin-left: .3rem; 
+}
+hr{
+      border-color: #7C7F86;
+      border-width: 1px;
+      border-style:solid;
+}
+
+.links{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+}
+
+.links a{
+      text-decoration: none;
+      color: #FFFFFF;
+      background-color: #469A99;
+      padding: .5rem;
+      border-radius: .3rem;
+      font-weight: 600;
+      text-transform: uppercase;
+}
+
+
+
+
+
+.top-menu-overview{
+      grid-area: topmenu;
+      min-height: 20dvh;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 1rem;
+}
+
+.overview-date{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+}
+
+.overview-date h2{
+      margin: 0;
+      font-size: 1.1rem;
+      color: #1F2732;
+}
+
+.overview{
+      display: flex;
+      width: 100%;
+      gap: 1rem;
+      justify-content: space-between;
+}
+
+.overview-item{
+      background-color: #FFFFFFFF;
+      width: 100%;
+      padding: 1rem;
+      border-radius: .3rem;
+      position:relative;
+      
+}
+
+.overview-item p{
+      margin: 0;
+      color: #7C7F86;
+      font-weight: 600;
+      font-size: .8rem;
+      margin-bottom: .5rem;
+}
+.overview-item h6{
+      margin: 0;
+      color: #1F2732;
+      font-size: 1rem;
+}
+
+.overview-item small{
+      text-align: right;
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      font-weight: 600;
+}
+
+.revenue{
+      color: #FF8200;   
+}
+
+.orders{
+      
+      color: #1F9C4B;
+}
+.refunds{
+      color: #FF3729;
+}
+
+.profits{
+      color: #FF8200;
+}
+
+.outlet-container{
+      grid-area: outlet;
+      min-height: 80dvh;
+      padding: 1rem;
+}

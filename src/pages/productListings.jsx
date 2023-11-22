@@ -1,9 +1,15 @@
 import React from 'react'
+import Product from '../components/product'
+import products from '../data.json'
 
 const ProductListings = () => {
   return (
-    <div>
-      <h2>ProductListings</h2>
+    <div className='products-container'>
+      <h2>All Products</h2>
+      <div className="products">
+      {products.map(product=><Product product={product}/>)}
+        
+      </div>
     </div>
   )
 }

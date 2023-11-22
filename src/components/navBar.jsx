@@ -11,22 +11,27 @@ const NavBar = () => {
                         </div>
 
                         <div className="nav-bar-item search">
-                              <input type="text" placeholder="search through the store" />
+                              <input type="text" placeholder="Search through the store..." />
                               <button type="submit">search</button>
                         </div>
                         <div className="nav-bar-item accounts">
                               <div className="account-item">
                                     <a href="#">
-                                    <i class="far fa-user fa-2x"></i>
+                                          <i class="far fa-user fa-2x"></i>
                                           <span>Account</span>
                                     </a>
                               </div>
                               <div className="account-item">
                                     <a href="#">
-                                    <i class="fas fa-cart-plus fa-2x"></i>
+                                    <small>0</small>
+                                          <i class="fas fa-cart-plus fa-2x"></i>
                                           <span>Cart</span>
                                     </a>
                               </div>
+                        </div>
+
+                        <div className="nav-bar-item menu">
+                        <i className="fas fa-bars fa-2x"></i>
                         </div>
 
                   </div>
